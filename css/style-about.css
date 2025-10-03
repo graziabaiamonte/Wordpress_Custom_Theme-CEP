@@ -1,0 +1,562 @@
+.heroAbout {
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0% 5% 0% 5%;
+    background-image: url('https://www.cepsrl.it/nuovo/wp-content/uploads/2025/02/team-scaled.webp');
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.225);
+}
+
+.heroAbout img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heroAbout h1 {
+    z-index: 2;
+    padding-bottom: 10%;
+    color: var(--bianco);
+    font-size: 3.5em;
+    width: 50%;
+    z-index: 555;
+}
+
+.heroAbout a {
+    z-index: 666;
+    padding-bottom: 10%;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--bianco);
+}
+
+
+
+/* second section */
+
+.secondSectionAbout {
+    padding: 2% 5% 10% 5%;
+    position: relative;
+    clip-path: var(--piega);
+    background-color: var(--nero);
+    z-index: 3;
+    margin-top: -5%;
+}
+
+.secondSectionAbout h2 {
+    color: var(--verde);
+    font-size: 3em;
+    width: 70%;
+    line-height: 1em;
+}
+
+
+
+/* terza sezione */
+
+.terzaSezione {
+    display: flex;
+    background-color: var(--bianco);
+    clip-path: var(--piega);
+    padding: 5% 5% 10% 5% ;
+    gap:100px;
+    margin-top: -5%;
+    justify-content: center;
+    align-items: start;
+    color: var(--nero);
+    position: relative;
+    z-index: 4;
+}
+
+.terzaSezione h2 {
+    font-size: 2em;
+    width: 70%;
+}
+
+.terzaSezione h2 span {
+    background-color: var(--giallo);
+    width: fit-content;
+    padding: 1%;
+}
+
+.terzaSezione div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.rientroUl {
+    padding-left: 5%;
+}
+
+
+/* foto full */
+
+.fotoFullAbout {
+    height: 100vh;
+    clip-path: var(--piega);
+    margin-top: -5%;
+    position: relative;
+    z-index: 3;
+}
+
+.fotoFullAbout img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* 
+section numeri */
+
+  
+
+
+.sectionNumber {
+    color: var(--verde);
+    padding: 5% 5% 10% 5%;
+    display: flex;
+    z-index: 6663;
+    clip-path: var(--piega);
+    background-color: var(--nero);
+    /* min-height: 50vh; */
+    position: relative;
+    flex-direction: column;
+    margin-top: -10%;
+}
+
+.boxMainNumeri {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionNumber .cardNumero {
+    clip-path: var(--piega);
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.216); */
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.216) 0px,
+      rgba(0, 0, 0, 0.216) calc(100% - 120px),
+      rgba(0, 0, 0, 0) 100%
+    );
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* flex: 1; */
+    justify-content: space-between;
+    max-width: 230px;
+}
+
+
+
+
+.sectionNumber p {
+    font-size: 90px ;
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke: 2px var(--verde);
+}
+
+
+.cardNumero h3 {
+    font-size: 1.5em;
+    text-align: left;
+    color: var(--verde);
+}
+
+.cardNumero p {
+    opacity: 0; /* Gli elementi partono invisibili */
+    transform: translateY(30px); /* Partono leggermente sotto per l'effetto di animazione */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cardNumero p.visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+/* mondo main */
+.boxIntestazione {
+    background-color: var(--bianco);
+    padding: 2% 5% 10% 5%;
+    position: relative;
+    z-index: 5555;
+}
+
+#scene-container {
+    position: relative;
+}
+
+
+.tooltipProva {
+    position: absolute;
+    /* background-color: var(--grigioDettagli); */
+    color: var(--nero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2% 3%; */
+    z-index: 99999999999999999999999999999999;
+    font-family: 'HelveticaBold', serif;
+    font-size: 12px;
+    text-transform:capitalize;
+    /* border-radius: 50%; */
+  }
+
+
+  .boxMondo {
+    background-color: var(--bianco);
+    padding-bottom: 20%;
+    position: relative;
+    z-index: 4;
+  }
+
+
+  /* ------------------ timeline ------------- */
+.titoloTimeline {
+    z-index: 3444444;
+    position: relative;
+    background-color: var(--bianco);
+    clip-path: var(--piega);
+    margin-top: -5%;
+    padding: 2% 5% 5% 5%;
+}
+
+.titoloTimeline h2 {
+    font-size: 2em;
+    width: 70%;
+}
+  .sectionTimelineMain {
+    background-color: var(--bianco);
+  }
+
+  .img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  .page-wrapper {
+    z-index: 0;
+    position: relative;
+  }
+
+  .container {
+    width: 90vw;
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .margin-bottom-medium {
+    margin-bottom: 32px;
+  }
+
+.padding-vertical-xlarge {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.timeline-main_haeding-wrapper {
+    color: white;
+    text-align: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline_component {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+}
+
+.timeline_item {
+    z-index: 2;
+    grid-column-gap: 0px;
+    grid-row-gap:0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 180px 1fr;
+    grid-auto-columns: 1fr;
+    /* padding-top: 80px; */
+    padding-bottom: 80px;
+    display: grid;
+    position: relative;
+}
+
+.timeline_left {
+    text-align: right;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.timeline_centre {
+    justify-content: center;
+    display: flex;
+}
+
+.timeline_date-text {
+    color: var(--grigioDettagli);
+    font-size: 40px;
+    position: sticky;
+    top: 50vh;
+    font-family: 'HelveticaBold', serif;
+}
+
+
+.timeline_circle {
+    background-color: var(--verde);
+    border-radius: 100%;
+    width: 15px;
+    min-width: 15px;
+    max-width: 15px;
+    height: 15px;
+    position: sticky;
+    top: 50vh;
+    box-shadow: 0 0 0 8px var(--bianco);
+}
+
+.timeline_progress {
+    z-index: -2;
+    background-color: var(--grigioDettagli);
+    width: 3px;
+    height: 100%;
+    position: absolute;
+}
+
+.timeline_progress-bar {
+    z-index: -1;
+    background: var(--verde);
+    width: 3px;
+    height: 50vh;
+    position: fixed;
+    inset: 0 auto 50vh;
+}
+
+.section-timeline {
+    z-index: -3;
+    background-color: var(--bianco);
+    position: relative;
+    padding-top: 5%;
+    margin-top: -2%;
+}
+
+.margin-bottom-xlarge {
+    margin-bottom: 60px;
+}
+
+.overlay-fade-top {
+    height: 80px;
+    background-image: linear-gradient(#0a0a0a, #0a0a0a00);
+    position: absolute;
+    inset: 0% 0% auto;
+}
+
+.overlay-fade-bottom {
+    background-image: linear-gradient(to top, #0a0a0a, #0a0a0a00);
+    position: absolute;
+    inset: auto 0% 0%;
+}
+
+.timeline_text {
+    color: var(--nero);
+    font-family: 'Helvetica', serif ;
+}
+
+.timeline_text span {
+    color: var(--verde);
+    font-family: 'HelveticaBold', serif;
+  
+}
+
+  /* ------- fine timeline ------------------------ */
+
+
+
+
+@media only screen and (max-width:768px) {
+    .heroAbout h1 {
+        font-size: 34px;
+        width: 90%;
+        padding-bottom: 30%;
+    }
+
+    .heroAbout a {
+        padding-bottom: 30%;
+    }
+
+    .heroAbout {
+        height: 100vh;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        padding: 0% 5% 0% 5%;
+        background-image: url('https://www.cepsrl.it/nuovo/wp-content/uploads/2025/02/team-1-scaled.webp');
+        background-position: center top;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+        z-index: 3;
+    }
+    
+
+    .boxIntestazione {
+        padding: 2% 5% 15% 5%;
+        margin-top: -10%;
+    }
+
+    .heroAbout {
+        height: 75vh;
+    }
+
+    .secondSectionAbout {
+        padding: 10% 5% 15% 5%;
+        margin-top: -10%;
+    }
+
+    .secondSectionAbout h2 {
+        width: 95%;
+        font-size: 30px;
+        margin-top: 5%;
+    }
+
+    .terzaSezione {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: -10%;
+        padding: 10% 5% 25% 5%;
+    }
+
+    .terzaSezione h2 {
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .terzaSezione div {
+        width: 100%;
+    }
+
+    .sectionNumber {
+        flex-direction: column;
+        gap: 50px;
+        padding: 5% 5% 25% 5%;
+    }
+
+    .boxMainNumeri {
+        flex-direction: column;
+        gap: 50px;
+        padding: 5% 5% 5% 5%;
+    }
+
+    .sectionNumber .cardNumero {
+        border: none;
+        padding: 8% 5% 5% 8%;
+        z-index: 66;
+        max-width: 90vw;
+    }
+
+    .sectionNumber p {
+        font-size: 64px;
+    }
+
+
+    .cardNumero h3 {
+        z-index: 6;
+    }
+
+   .boxMondo {
+    margin-top: -3%;
+   }
+
+   .fotoFullAbout {
+    margin-top: -10%;
+   }
+
+   .timeline_item {
+    grid-template-columns: 64px 1fr;
+    width: 100%;
+   }
+
+   .timeline_left {
+    text-align: left;
+    grid-area: 1/2/2/3;
+   }
+
+   .timeline_centre {
+    justify-content: flex-start;
+    grid-area: 1/1/3/2;
+   }
+
+   .timeline_right {
+    grid-area: span 1 / span 1 /span 1 / span 1;
+    padding-right: 5%;
+   }
+ 
+
+   .timeline_date-text {
+    margin-bottom: 24px;
+    font-size: 25px;
+   }
+
+   .timeline_text {
+    font-size: 16px;
+   }
+
+   .timeline_progress {
+    left: 6px;
+   }
+
+   .margin-bottom-xlarge {
+    margin-bottom: 48px;
+   }
+
+   .titoloTimeline {
+    margin-top: -10%;
+    padding: 10% 5% 5% 5%;
+   }
+
+   .titoloTimeline h2 {
+    font-size: 30px;
+   }
+
+  #scene-container {
+    height: 100vh !important;
+  } 
+
+
+  #scene-container_globe {
+    height: 100vh !important;
+    overflow: hidden;
+  } 
+  
+   
+}

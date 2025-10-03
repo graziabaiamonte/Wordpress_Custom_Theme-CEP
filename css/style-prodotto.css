@@ -1,0 +1,646 @@
+.mainTitoloFoto {
+    position: relative;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.testoHero {
+    height: 20%;
+    padding: 0% 5% 0% 5%;
+}
+
+.testoHero h3 {
+    width: 50%;
+    font-size: 20px;
+}
+
+.testoHero div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.mainTitoloFoto img {
+    position: absolute;
+    height: 140%;
+    width: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.mainTitoloFoto video {
+    position: absolute;
+    /* height: 140%; */
+    width: 100%;
+    object-fit: contain;
+    z-index: 2;
+
+    height: 100vh;
+    bottom: -15%;
+}
+
+.testoHeroMain {
+    z-index: 3;
+}
+
+.testoHeroMain h1 {
+    font-size: 100px;
+    color: var(--nero);
+    -webkit-text-stroke: 0.7px var(--blu);
+ 
+}
+
+.heroGiallo .testoHeroMain h1 {
+    font-size: 100px;
+    color: var(--nero);
+    -webkit-text-stroke: 0.7px var(--giallo);
+}
+
+.testoHeroMain h2 {
+    font-size: 34px;
+}
+
+
+.heroBlu {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--blu);
+    background-color: var(--nero);
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.heroGiallo {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--giallo);
+    background-color: var(--nero);
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.btn.blu::after {
+    top: 0;
+    left: 0;
+    border-top: 3px solid var(--giallo);
+    border-left: 3px solid var(--gialo);
+  }
+  
+  .btn.blu::before {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid var(--giallo);
+    border-right: 3px solid var(--giallo);
+  }
+
+
+.heroProdotto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--giallo);
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+.heroProdotto.blu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--nero);
+    align-items: center;
+    padding-bottom: 20%;
+    height: 100vh;
+}
+
+.heroProdotto img {
+    width: 80%;
+    object-fit: contain;
+    z-index: 3;
+}
+
+.descrizioneHeroProdotto{
+    background-color: var(--nero);
+    position: absolute;
+    padding: 5% 0% 5% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--verde);
+   
+}
+
+.descrizioneHeroProdotto.blu {
+    color: var(--blu);
+    z-index: 5;
+    background: transparent;
+    height: 100%;
+}
+
+
+
+
+.data-container {
+    padding-right: 5%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 60vh;
+}
+
+
+
+.gradient.prodotto {
+    z-index: 2;
+
+}
+
+.boxtTestoProdotto {
+    width: 100% !important;
+    height: 20vh;
+}
+
+
+.descrizioneHeroProdotto h2 {
+    font-size: 4em;
+    padding-left: 10%;
+}
+
+.testoOutline {
+    font-size: 150px !important;
+    padding-left: 10%;
+    color: var(--nero);
+    -webkit-text-stroke: 2px var(--blu);
+}
+.descrizioneHeroProdotto p {
+    width: 70%;
+    padding-left: 10%;
+    font-size: 2em;
+}
+
+.descrizioneHeroProdotto h3 {
+    font-size: 14px;
+    padding-left: 10%;
+}
+
+.boxPulsante {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.boxPulsante button {
+    width: fit-content;
+    margin-right: 5%;
+    background-color: transparent;
+    border: 1px solid var(--giallo);
+    padding: 2%;
+}
+
+.boxPulsante button img {
+    height: 40px;
+}
+
+
+
+
+
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: transparent;
+    font-size: 28px;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    height: 90%;
+  }
+  
+  .btn::after,
+  .btn::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+  
+  .btn::after {
+    top: 0;
+    left: 0;
+    border-top: 3px solid var(--giallo);
+    border-left: 3px solid var(--giallo);
+  }
+  
+  .btn::before {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid var(--giallo);
+    border-right: 3px solid var(--giallo);
+  }
+
+
+  .btn.blu::after {
+    top: 0;
+    left: 0;
+    border-top: 3px solid var(--blu);
+    border-left: 3px solid var(--blu);
+  }
+  
+  .btn.blu::before {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid var(--blu);
+    border-right: 3px solid var(--blu);
+  }
+  
+  .btn:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  
+  .btn:hover::before,
+  .btn:hover::after {
+    width:80%;
+    height: 80%;
+  }
+ 
+
+  .btn img {
+    height: 40px;
+  }
+
+
+
+
+
+
+
+
+/* accordion */
+
+.mainAccordion {
+    background-color: var(--giallo);
+    position: relative;
+    clip-path: var(--piega);
+    padding: 2% 5% 5% 5% ;
+    margin-top: -5%;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainAccordion.blu {
+    background-color: var(--blu);
+}
+
+.mainAccordion h2 {
+    font-size: 3em;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.accordion .contentBx{
+    position: relative;
+    cursor: pointer;
+    padding: 2%;
+    border: 1px solid var(--nero);
+    border-width: 0px 0px 1px 0px;
+}
+
+.accordion .contentBx .label::before {
+    content: "+";
+    position: absolute;
+    top:50%;
+    right: 20px;  
+    transform: translateY(-50%);
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+   
+}
+
+.accordion .contentBx.active .content {
+    max-height: 500px; 
+    font-family: 'Helvetica', serif ;
+    padding: 3% 0%;
+    scroll-behavior: smooth;
+}
+
+
+
+.piccolaIntestazione.accordion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+/* Foto full */
+
+.boxFotoFull {
+    position: relative;
+}
+
+.gradientGiallo {
+    width: 100%;
+    height: 200px; 
+    background: linear-gradient(to bottom,  
+    #cbff00 0px,    /* Colore pieno fino a 100px */
+    #cbff00 100px,  /* Colore ancora pieno fino a 100px */
+    rgba(203, 255, 0, 0.8) 140px,  /* Inizio sfumatura */
+    rgba(203, 255, 0, 0) 200px  /* Fine sfumatura */
+);
+
+
+    z-index: 3;
+    position: absolute;
+   top:-2%;
+    left: 0;
+}
+
+
+.gradientBlu {
+    width: 100%;
+    height: 200px; 
+    background: linear-gradient(to bottom,  
+    #0580e4 0px,    /* Colore blu pieno fino a 100px */
+    #0580e4 100px,  /* Colore blu ancora pieno fino a 100px */
+    rgba(5, 128, 228, 0.8) 140px,  /* Blu sfumato */
+    rgba(5, 128, 228, 0) 200px  /* Fine sfumatura blu */
+    );
+
+    z-index: 3;
+    position: absolute;
+    top: -2%;
+    left: 0;
+}
+
+/* -------------- VIDEO HERO -------------- */
+
+
+.videoStickySection {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.videoStickySection video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* --------- FINE VIDEO HERO --------- */
+
+
+
+/* section componenti */
+.sectionComponenti {
+    background-color: var(--bianco);
+    clip-path: var(--piega);
+    min-height: 95vh;
+    padding: 2% 5% 5% 5%;
+}
+
+.descrizioneComponente  div{
+    color: var(--verde);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.descrizioneComponente h3 {
+    font-size: 14px;
+}
+
+.descrizioneComponente h2 {
+    font-size: 3em;
+}
+
+.boxMainSliderPlugin {
+    padding-bottom: 5%;
+}
+
+.titolo {
+    font-family: 'HelveticaBold', serif !important;
+}
+
+.testoSlider {
+    font-family: 'Helvetica', serif !important;
+}
+
+
+
+
+
+
+
+/* ---------------- ANIMATION FRAME  --------------- */
+
+.stickyHero {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    z-index: 10;
+  }
+  canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill;
+  }
+  
+
+
+
+/* -------- FINE ANIMATION FRAME ---------   */
+
+@media  only screen and (min-width:1280px) {
+
+.boxtTestoProdotto {
+    width: 50%;
+    height: 20vh;
+}
+
+.testoHeroMain h1 {
+    font-size: 120px;
+    color: var(--nero);
+    -webkit-text-stroke: 0.7px var(--blu);
+}
+
+.heroGiallo .testoHeroMain h1 {
+    font-size: 120px;
+    color: var(--nero);
+    -webkit-text-stroke: 0.7px var(--giallo);
+}
+
+.testoHero h3 {
+    width: 50%;
+    font-size: 24px;
+}
+
+.testoHeroMain h2 {
+    font-size: 40px;
+}
+
+.mainTitoloFoto {
+    height: 90vh;
+}
+
+#videoSection {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 120vw;
+    height: 95vh;
+}
+
+
+.mainTitoloFoto video {
+    height:150vh;
+    bottom: -35%;
+}
+}
+
+
+@media only screen and (max-width:768px) {
+    .btn {
+        padding: 0%;
+        height: 50%;
+    }
+
+    .btn img {
+        width: 30% !important;
+    }
+
+    .heroProdotto img  {
+        width: 100%;
+    }
+
+    .boxtTestoProdotto {
+        width: 90%;
+    }
+
+    /* .heroProdotto {
+        height: auto;
+    } */
+
+  
+
+    .descrizioneHeroProdotto {
+        padding: 15% 0% 40% 0%;
+    }
+
+    .mainAccordion h2 {
+        font-size: 30px;
+    }
+
+    .mainAccordion {
+        padding: 10% 5% 5% 5%;
+        margin-top: -10%;
+        z-index: 3 !important;
+    }
+
+    .accordion .contentBx {
+        padding: 7%;
+    }
+
+   
+    .mainTitoloFoto {
+        height: 80%;
+        flex-direction: column;
+        padding-top: 15%;
+        align-items: flex-start;
+    }
+
+    .testoHeroMain h1 {
+        font-size: 50px;
+    }
+
+    .heroGiallo .testoHeroMain h1 {
+        font-size: 50px;
+    }
+
+
+    .mainTitoloFoto img {
+        width: 150%;
+        left: -25%;
+        top:-5%;
+    }
+
+    .testoHeroMain {
+        padding-top: 20%;
+    }
+
+    .testoHero {
+        height: auto;
+    }
+
+    .testoHero h3 {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .heroGiallo .testoHero h3 {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .heroBlu {
+        padding-bottom: 15%;
+    }
+
+    .heroGiallo {
+        padding-bottom: 15%;
+    }
+
+    .testoHero div {
+        align-items: end;
+    }
+
+    .testoHeroMain h2 {
+        font-size: 25px;
+    }
+}
