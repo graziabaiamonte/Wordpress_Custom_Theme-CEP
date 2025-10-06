@@ -29,3 +29,4 @@ The theme's goal is to offer a flexible, high-performance, and easily maintainab
 - **Optimized performance**: asynchronous script loading, optimized images, and minimized JS/CSS bundles.
 
 ![Screenshot Home](/cep_homepage.png)
+![Demo cabina](/cep_cabina.gif)
