@@ -28,4 +28,4 @@ The theme's goal is to offer a flexible, high-performance, and easily maintainab
 
 - **Optimized performance**: asynchronous script loading, optimized images, and minimized JS/CSS bundles.
 
-![Screenshot Home](assets/xreadme/inner_page_global_warming.png)
+![Screenshot Home](/cep_homepage.png)
