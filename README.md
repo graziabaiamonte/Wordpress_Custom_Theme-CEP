@@ -1,6 +1,6 @@
 # Wordpress Custom Theme - CEP
 
-Custom WordPress theme developed for the official website of [CEP Srl](www.cepsrl.it).
+Custom WordPress theme developed for the official website of [CEP Srl](https://www.cepsrl.it).
 The theme's goal is to offer a flexible, high-performance, and easily maintainable structure, adaptable to the client's needs for managing company content, products, services, and updates.
 
 ## ⚙️ Tech Stack
